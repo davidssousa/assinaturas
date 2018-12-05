@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assinaturas de Email</title>
+</head>
+
+<style>
+    * {
+        /* border: 1px solid red; */
+        font-family: 'Calibri, Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif
+    }
+    .l-fundo {
+        margin: 50px auto 10px auto;
+        width: 450px;
+        height: 170px;
+        /* background-color: skyblue;  */
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .l-wrapper {
+        /* background-color: darkblue;  */
+        border: 2px solid #00778e;
+        border-radius: 10px;
+        padding: 2px 10px 10px 30px;
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: 85px 20px 65px;
+        grid-gap: .1rem;
+        grid-template-areas: 
+            "logo       logo        logo        logo        logo       dados    dados    dados   dados"
+            "rede       rede        rede        rede        rede       dados    dados    dados   dados"
+            "fot1       fot1        fot2        fot2        fot2       fot3     fot3     fot3    ."
+        ;
+        
+    }
+    .l-logo {
+        /* background-color: blueviolet; */
+        grid-area: logo;
+        align-self: start;
+        justify-self: start;
+    }
+    .l-rede {
+        /* background-color: brown; */
+        grid-area: rede;
+        align-self: center;
+        justify-self: start;
+    }
+    .l-dados {
+        /* background-color: darkgoldenrod; */
+        grid-area: dados;
+        align-self: start;
+    }
+    
+
+    .l-redeSocial {
+        /* background-color: chocolate; */
+        display: grid;
+        grid-column-gap: .1rem;
+        align-self: start;
+        grid-template-rows: 20px;
+        grid-template-columns: 22px 47px 22px 55px 22px 1fr;
+        grid-template-areas: 
+            "redLogo1    redDesc1   redLogo2      redDesc2       redLogo3    redDesc3"
+        ;
+    }
+    .l-rede-logo1 { align-self: center; justify-self: center; grid-area: redLogo1;  }
+    .l-rede-desc1 { align-self: center; justify-self: start; grid-area: redDesc1; font-size: 10px;}
+    .l-rede-logo2 { align-self: center; justify-self: center; grid-area: redLogo2; }
+    .l-rede-desc2 { align-self: center; justify-self: start; grid-area: redDesc2; font-size: 10px;}
+    .l-rede-logo3 { align-self: center; justify-self: center; grid-area: redLogo3; }
+    .l-rede-desc3 { align-self: center; justify-self: start; grid-area: redDesc3; font-size: 10px;}
+
+    img.l-rede-social--size {
+        width: 20px;
+        height: 20px;
+    }
+
+
+
+    .l-usuario {
+        /* background-color: aqua; */
+        display: grid;
+        /* align-self: start; */
+        grid-gap: .1rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 16px);
+        grid-template-areas: 
+            "nome"
+            "nome"
+            "depart"
+            "email"
+            "tel1"
+            "tel2"
+        ;
+
+    }
+    .l-nome {
+        padding-top: 10px;
+        /* background-color: chocolate; */
+        grid-area: nome;
+        /* align-self: start; */
+        /* justify-self: normal; */
+        font-size: 18px;
+    }
+    .l-depart {  grid-area: depart; font-size: 12px; align-self: start; }
+    .l-email  {  grid-area: email;  font-size: 12px; align-self: start; }
+    .l-tel1   {  grid-area: tel1;   font-size: 12px; align-self: start; }
+    .l-tel2   {  grid-area: tel2;   font-size: 12px; align-self: start; }
+
+    .l-fot1 {
+        grid-area: fot1;
+        align-self: end;
+        justify-self: start;
+    }
+    .l-fot2 {
+        grid-area: fot2;
+        align-self: end;
+        justify-self: center;
+        padding-left: 9px;
+    }
+    .l-fot3 {
+        grid-area: fot3;
+        align-self: end;
+        justify-self: end;
+    }
+
+
+    .l-fonte--color1 {
+        color: #00778e;
+    }
+    .l-fonte--color2 {
+        color: silver
+    }
+    .l-fonte--color3 {
+        color: black;
+    }
+</style>
+<body>
+    
+    <div class="l-fundo">
+            <h1>Amostras</h1>
+            <br>
+            <div class="l-wrapper">
+    
+                    <div class="l-logo">
+                        <img src="http://www.artfix.com.br/signatures/logo_artfix.png" width="212px">
+                    </div>
+                    <div class="l-rede">
+                            <div class="l-redeSocial">
+                                <div class="l-rede-logo1">
+                                    <img class="l-rede-social--size" src="http://www.artfix.com.br/signatures/logo_linkedin.png">    
+                                </div>
+                                <div class="l-rede-desc1 l-fonte--color2">Linkedin</div>
+                                <div class="l-rede-logo2">
+                                    <img class="l-rede-social--size" src="http://www.artfix.com.br/signatures/logo_site_home.jpg">    
+                                </div>
+                                <div class="l-rede-desc2 l-fonte--color2">Site Artfix</div>
+                                <div class="l-rede-logo3">
+                                    <img class="l-rede-social--size" src="http://www.artfix.com.br/signatures/logo_youtube.png">    
+                                </div>
+                                <div class="l-rede-desc3  l-fonte--color2">Youtube</div>
+                            </div>
+                    </div>
+                    <div class="l-dados">
+                            <div class="l-usuario">
+                                <div class="l-nome l-fonte--color1">Felipe Loturco</div>
+                                <div class="l-depart l-fonte--color2">Novos Negócios</div>
+                                <div class="l-email l-fonte--color1">felipe.loturco@artfix.com.br</div>
+                                <div class="l-tel1 l-fonte--color2">
+                                    (11) 97521-1975
+                                </div>
+                                <div class="l-tel2 l-fonte--color2">(11) 5098-3434 | 4093-9800</div>
+                            </div>
+                    </div>
+                    <div class="l-fot1">
+                        <img src="http://www.artfix.com.br/signatures/logo_greenguard.png" width="55px">
+                    </div>
+                    <div class="l-fot2">
+                        <img src="http://www.artfix.com.br/signatures/logo_abvtex.png" width="55px">
+                    </div>
+                    <div class="l-fot3">
+                            <img src="http://www.artfix.com.br/signatures/logo_certificacao_fama.jpg" width="100px" >
+                    </div>
+    
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="l-fundo">
+                <div class="l-wrapper">
+        
+                        <div class="l-logo">
+                            <img src="http://www.artfix.com.br/signatures/logo_artfix.png" width="212px">
+                        </div>
+                        <div class="l-rede">
+                                <div class="l-redeSocial">
+                                    <div class="l-rede-logo1">
+                                        <img class="l-rede-social--size" src="http://www.artfix.com.br/signatures/logo_linkedin.png">    
+                                    </div>
+                                    <div class="l-rede-desc1 l-fonte--color3">Linkedin</div>
+                                    <div class="l-rede-logo2">
+                                        <img class="l-rede-social--size" src="http://www.artfix.com.br/signatures/logo_site_home.jpg">    
+                                    </div>
+                                    <div class="l-rede-desc2 l-fonte--color3">Site Artfix</div>
+                                    <div class="l-rede-logo3">
+                                        <img class="l-rede-social--size" src="http://www.artfix.com.br/signatures/logo_youtube.png">    
+                                    </div>
+                                    <div class="l-rede-desc3  l-fonte--color3">Youtube</div>
+                                </div>
+                        </div>
+                        <div class="l-dados">
+                                <div class="l-usuario">
+                                    <div class="l-nome l-fonte--color1">Felipe Loturco</div>
+                                    <div class="l-depart l-fonte--color3">Novos Negócios</div>
+                                    <div class="l-email l-fonte--color1">felipe.loturco@artfix.com.br</div>
+                                    <div class="l-tel1 l-fonte--color3">
+                                        (11) 97521-1975
+                                    </div>
+                                    <div class="l-tel2 l-fonte--color3">(11) 5098-3434 | 4093-9800</div>
+                                </div>
+                        </div>
+                        <div class="l-fot1">
+                            <img src="http://www.artfix.com.br/signatures/logo_greenguard.png" width="55px">
+                        </div>
+                        <div class="l-fot2">
+                            <img src="http://www.artfix.com.br/signatures/logo_abvtex.png" width="55px">
+                        </div>
+                        <div class="l-fot3">
+                                <img src="http://www.artfix.com.br/signatures/logo_certificacao_fama.jpg" width="100px" >
+                        </div>
+        
+                </div>
+            </div>
+        
+</body>
+</html>
